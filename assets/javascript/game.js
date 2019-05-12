@@ -24,20 +24,17 @@ function findRandomLetter() {
 function updateGuessesLeft() {
     // Here we are grabbing the HTML element and setting it equal to the guessesLeft. (i.e. guessesLeft will get displayed in HTML)
     document.querySelector('#guessesLeft').innerHTML = "Guesses left: " + guessesLeft;
+
 };
+
+function updateGuessesSoFar() {
+    // Here we take the guesses the user has tried -- then display it as letters separated by commas. 
+    document.querySelector('#let').innerHTML = "Your Guesses so far: " + guessedLetters.join(', ');
+};
+
 //Browser Testing
 console.log(letters);
 console.log(randomLetter)
-
-//
-
-
-
-function updateGuessesLeft() {
-    // Here we are grabbing the HTML element and setting it equal to the guessesLeft. (i.e. guessesLeft will get displayed in HTML)
-    document.querySelector('#guessLeft').innerHTML = "Guesses left: " + guessesLeft;
-};
-
 
 // Display the user and computer guesses, and wins/losses/ties.
 guessesSoFar.textContent = "Letters guessed: " + letterGuesses;
