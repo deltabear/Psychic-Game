@@ -21,7 +21,7 @@ if (userguess == computerGuess) {
 computerGuess = options[Math.floor(Math.random()*options.length)];
   intialized=true;
   wins++;
-  turns = 9; 
+  turns = 13; 
   guess = ""; 
 }
 
@@ -31,7 +31,7 @@ else if(userguess !== computerGuess) {
 
   if (turns ==0) {
     losses++;
-    turns= 9;
+    turns= 13;
     guess="";
 
 
